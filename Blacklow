@@ -1,6 +1,6 @@
 
 
-local gameId = game.PlaceId  -- Use PlaceId instead of gameId
+local gameId = game.PlaceId  
 if gameId == 6104994594 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/QuickKing/Charlesssss/refs/heads/main/%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%20Pilfering%20Pirates%20%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F"))()
 else
