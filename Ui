@@ -14,7 +14,7 @@ local OrionLib = {
 	Flags = {},
 	Themes = {
 		Default = {
-			Main = Color3.fromRGB(0, 19, 89),
+			Main = Color3.fromRGB(25, 25, 25),
 			Second = Color3.fromRGB(32, 32, 32),
 			Stroke = Color3.fromRGB(60, 60, 60),
 			Divider = Color3.fromRGB(60, 60, 60),
@@ -26,6 +26,7 @@ local OrionLib = {
 	Folder = nil,
 	SaveCfg = false
 }
+
 
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
@@ -52,7 +53,7 @@ if syn then
 	syn.protect_gui(Orion)
 	Orion.Parent = game.CoreGui
 else
-	Orion.Parent = gethui() or game.CoreGui
+	Orion.Parent = game.CoreGui
 end
 
 if gethui then
