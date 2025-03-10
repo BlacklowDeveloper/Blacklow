@@ -27,7 +27,6 @@ local OrionLib = {
 	SaveCfg = false
 }
 
-
 --Feather Icons https://github.com/evoincorp/lucideblox/tree/master/src/modules/util - Created by 7kayoh
 local Icons = {}
 
@@ -48,12 +47,12 @@ local function GetIcon(IconName)
 end   
 
 local Orion = Instance.new("ScreenGui")
-Orion.Name = "Blacklow"
+Orion.Name = "Blacklow Technologie"
 if syn then
 	syn.protect_gui(Orion)
 	Orion.Parent = game.CoreGui
 else
-	Orion.Parent = game.CoreGui
+	Orion.Parent = gethui() or game.CoreGui
 end
 
 if gethui then
@@ -1710,6 +1709,9 @@ function OrionLib:MakeWindow(WindowConfig)
 		end
 		return ElementFunction   
 	end  
+	
+
+	
 
 	
 	return TabFunction
