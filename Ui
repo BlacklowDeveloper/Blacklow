@@ -55,12 +55,7 @@ else
 	Orion.Parent = game.CoreGui
 end
 
--- Supprime les autres instances du même nom dans CoreGui
-for _, Interface in ipairs(game.CoreGui:GetChildren()) do
-	if Interface.Name == Orion.Name and Interface ~= Orion then
-		Interface:Destroy()
-	end
-end
+
 
 local OrionLib = {}
 
