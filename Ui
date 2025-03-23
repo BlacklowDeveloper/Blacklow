@@ -48,22 +48,12 @@ end
 
 local Orion = Instance.new("ScreenGui")
 Orion.Name = "Orion"
-
-if gethui then
-return 
-else
-	Orion.Parent = game.CoreGui
-end
+Orion.Parent = player:FindFirstChildOfClass("PlayerGui")
 
 
 
 local OrionLib = {}
 
-function OrionLib:IsRunning()
-	return Orion.Parent == game:GetService("CoreGui")
-end
-
-return OrionLib
 
 local function AddConnection(Signal, Function)
 	if (not OrionLib:IsRunning()) then
