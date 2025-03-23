@@ -47,13 +47,20 @@ local function GetIcon(IconName)
 end   
 
 local Orion = Instance.new("ScreenGui")
-Orion.Name = "Blacklow Technologie"
+Orion.Name = "Orion"
+
 if syn then
 	syn.protect_gui(Orion)
 	Orion.Parent = game.CoreGui
 else
-	Orion.Parent = gethui() or game.CoreGui
+	local executor = identifyexecutor and identifyexecutor() or "Unknown"
+	if executor == "Awp" or executor == "Solara" or executor == "Wave" then 
+		Orion.Parent = gethui()
+	else
+		Orion.Parent = game.CoreGui
+	end
 end
+
 
 if gethui then
 	for _, Interface in ipairs(gethui():GetChildren()) do
