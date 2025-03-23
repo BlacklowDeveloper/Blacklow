@@ -54,7 +54,7 @@ if syn then
 	Orion.Parent = game.CoreGui
 else
 	local executor = identifyexecutor and identifyexecutor() or "Unknown"
-	if executor == "Awp" or executor == "Solara" or executor == "Wave" then 
+	if executor == "AWP" or executor == "Solara" or executor == "Wave" then 
 		Orion.Parent = gethui()
 	else
 		Orion.Parent = game.CoreGui
